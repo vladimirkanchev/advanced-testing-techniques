@@ -3,8 +3,8 @@ def addthis(x, y):
   print(f"This is y: {y} and the y-type is {type(y)}")
   try:
     result = x+y
-  except TypeError as exception:
-    print(f"The wrong type passed in {exception}")
+  except TypeError:
+    print(f"The wrong type passed in")
     result = int(x)+int(y)
     
   print(f"This is the result: {result}")
